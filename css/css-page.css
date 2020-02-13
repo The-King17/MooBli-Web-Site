@@ -1,0 +1,46 @@
+/*Style (police,...) de tous les H1 du site*/
+h1{
+	color: white;
+	font-size: 30spx;
+	font-style: oblique;
+	font-weight: 800;
+}
+/*Couleur de fond sur toutes les pages*/
+body{
+	background-color: #5c3f27;
+}
+.livre{
+    border: 5px black solid;
+    height: 250px;
+    text-align: center;
+    width: 500px;
+    color: white;
+}
+input{
+	background:#000000;
+	font:bold 15px Arial;
+	border-radius:30%;
+	border:none;
+	color:#FFFFFF;
+	width: 25%;
+	height: 40%;
+}
+div.boutondet{
+	width:35%;
+	height:35%;
+	background:#000000;
+	font:bold 25px Arial;
+	border-radius:60%;
+	border:none;
+	color:#000000;
+	margin: 55px;
+}
+.texte{
+	color: white;
+}
+.texte2{
+	color: #FFFFFF;
+}
+a.top {
+   position:fixed;
+}

@@ -1,0 +1,39 @@
+/*Css de la barre de recherche*/
+label {
+    display: block;
+    font-style: oblique;
+	font-weight: 800;
+	font-size: 45px;
+}
+input,label {
+    margin: .6rem 2;
+}
+/*Permet la bonne disposition de la barre de recherche*/
+div.aligne{
+	display:inline-block;
+	width:155%;
+	margin:10px 15.5% 10px 15.5%;
+	text-align:center;
+}
+/*Design du bouton "go!"*/
+.bouton {
+	width:15px;
+	height:15px;
+	background:#000000;
+	font:bold 5px Arial;
+	border-radius:60%;
+	border:none;
+	color:#fff;
+}
+input{
+	width:95px;
+	height:95px;
+	background:#000000;
+	font:bold 35px Arial;
+	border-radius:30%;
+	border:none;
+	color:#fff;
+}
+div.texte{
+	color: white;
+}

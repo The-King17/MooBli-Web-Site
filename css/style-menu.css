@@ -1,0 +1,35 @@
+/*Suprime les soulignement des liens*/
+a:link{
+	text-decoration:none
+}
+/*Design du bouton*/
+.bouton {
+	width:35px;
+	height:35px;
+	background:#000000;
+	font:bold 30px Arial;
+	border-radius:60%;
+	border:none;
+	color:#fff;
+}
+/*Couleur de fond sur toutes les pages*/
+body{
+	background-color: #5c3f27;
+}
+/*Permet la bonne disposition des boutons de navigation*/
+div.bouton-aligne{
+	display:inline-block;
+	width:45%;
+	margin:10px 2.5% 10px 2.5%;
+	text-align:center;
+}
+/*Style (police,...) de tous les H1 du menu*/
+h1{
+	color: white;
+	font-size: 30spx;
+	font-style: oblique;
+	font-weight: 800;
+}
+footer{
+	color: white;
+}
