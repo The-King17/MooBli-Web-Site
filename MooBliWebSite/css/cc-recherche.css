@@ -1,0 +1,53 @@
+/*Css de la barre de recherche*/
+label {
+    display: block;
+    font-style: oblique;
+	font-weight: 800;
+	font-size: 55px;
+}
+input,label {
+    margin: .6rem 2;
+}
+/*Permet la bonne disposition de la barre de recherche*/
+div.aligne{
+	display:inline-block;
+	width:155%;
+	margin:10px 15.5% 10px 15.5%;
+	text-align:center;
+}
+input{
+	width:405px;
+	height:95px;
+	background:#FFFFFFF;
+	font:bold 35px Arial;
+	border-radius:30%;
+	border:none;
+	color:#0000000;
+}
+div.texte{
+	color: white;
+}
+.go{
+	width:65px;
+	height:60px;
+}
+.bouton-aligne-sigin {
+	width:35px;
+	height:35px;
+	background:#E2D425;
+	font:bold 30px Arial;
+	border-radius:60%;
+	border:none;
+	color:#000000;
+	display:inline-block;
+	width:45%;
+	margin:10px 2.5% 10px 2.5%;
+	text-align:center;
+}
+h2{
+    color: white;
+}
+p{
+    color:white;
+}
+
