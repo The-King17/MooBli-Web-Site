@@ -1,3 +1,6 @@
+<?php
+session_start(); // On démarre la session AVANT toute chose
+?>
 <!DOCTYPE html>
 	<html>
 		<head>
@@ -45,12 +48,12 @@
 		<div class="bouton-aligne">
         	<h2>J'ai un compte, je me connecte ! </h2>
         	    <div class="bouton-aligne-sigin">
-        	    <a href="">S'identifier</a>
+        	    <a href="formdeconnexion.php">S'identifier</a>
         	    </div>
         	</div><div class="bouton-aligne">
             <h2>Pas encore de compte ?</h2>	
                 <div class="bouton-aligne-sigin">
-                <a href="">S'inscrire</a>
+                <a href="inscription.php">S'inscrire</a>
                 </div>
             </div>
             <div class="bouton-aligne">

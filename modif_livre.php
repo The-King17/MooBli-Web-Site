@@ -8,7 +8,7 @@
 	<?php include (menu.php)?>	
 	<?php
 		try{
-	$bdd = new PDO('mysql:host=localhost;dbname=bibliotheque;charset=utf8', 'root', '');
+	$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
 	}catch(Exception $e){
         die('Erreur : '.$e->getMessage());
 	}
