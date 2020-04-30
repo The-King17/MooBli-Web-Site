@@ -6,7 +6,7 @@ a:link{
 .bouton {
 	width:35px;
 	height:35px;
-	background:#000000;
+	background:#E2D425;
 	font:bold 30px Arial;
 	border-radius:60%;
 	border:none;
@@ -14,7 +14,7 @@ a:link{
 }
 /*Couleur de fond sur toutes les pages*/
 body{
-	background-color: #5c3f27;
+	background-color: #E2D425;
 }
 /*Permet la bonne disposition des boutons de navigation*/
 div.bouton-aligne{
@@ -26,7 +26,7 @@ div.bouton-aligne{
 /*Style (police,...) de tous les H1 du menu*/
 h1{
 	color: white;
-	font-size: 30spx;
+	font-size: 20spx;
 	font-style: oblique;
 	font-weight: 800;
 }

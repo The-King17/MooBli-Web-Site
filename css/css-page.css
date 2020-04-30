@@ -7,7 +7,7 @@ h1{
 }
 /*Couleur de fond sur toutes les pages*/
 body{
-	background-color: #5c3f27;
+	background-color: #E2D425;
 }
 .livre{
     border: 5px black solid;
@@ -18,21 +18,21 @@ body{
 }
 input{
 	background:#000000;
-	font:bold 15px Arial;
-	border-radius:30%;
+	font:bold 20px Arial;
+	border-radius:40%;
 	border:none;
 	color:#FFFFFF;
-	width: 25%;
-	height: 40%;
+	width: 15%;
+	height: 30%;
 }
 div.boutondet{
 	width:35%;
 	height:35%;
-	background:#000000;
-	font:bold 25px Arial;
+	background:#E2D425;
+	font:bold 20px Arial;
 	border-radius:60%;
 	border:none;
-	color:#000000;
+	color:#FFFFF;
 	margin: 55px;
 }
 .texte{
@@ -41,6 +41,20 @@ div.boutondet{
 .texte2{
 	color: #FFFFFF;
 }
+.texte3{
+  	color: white;  
+}
 a.top {
    position:fixed;
+}
+.h2{
+    color: white;
+}
+div.bouton-aligne{
+	display:inline-block;
+	width: 45%;
+	margin: 10px 2.5% 10px 2.5%;
+}
+a{
+   font:bold 23px Arial;
 }

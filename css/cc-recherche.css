@@ -3,7 +3,7 @@ label {
     display: block;
     font-style: oblique;
 	font-weight: 800;
-	font-size: 45px;
+	font-size: 55px;
 }
 input,label {
     margin: .6rem 2;
@@ -15,25 +15,39 @@ div.aligne{
 	margin:10px 15.5% 10px 15.5%;
 	text-align:center;
 }
-/*Design du bouton "go!"*/
-.bouton {
-	width:15px;
-	height:15px;
-	background:#000000;
-	font:bold 5px Arial;
-	border-radius:60%;
-	border:none;
-	color:#fff;
-}
 input{
-	width:95px;
+	width:405px;
 	height:95px;
-	background:#000000;
+	background:#FFFFFFF;
 	font:bold 35px Arial;
 	border-radius:30%;
 	border:none;
-	color:#fff;
+	color:#0000000;
 }
 div.texte{
 	color: white;
 }
+.go{
+	width:65px;
+	height:60px;
+}
+.bouton-aligne-sigin {
+	width:35px;
+	height:35px;
+	background:#E2D425;
+	font:bold 30px Arial;
+	border-radius:60%;
+	border:none;
+	color:#000000;
+	display:inline-block;
+	width:45%;
+	margin:10px 2.5% 10px 2.5%;
+	text-align:center;
+}
+h2{
+    color: white;
+}
+p{
+    color:white;
+}
+

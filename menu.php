@@ -8,20 +8,18 @@
 </head>
 <body>
 	<center>
-	
 	<a href="Acceuil.php">
 		<img src="img/logo.png">
 	</a>
-		<br>
+	<div class="bouton-aligne">
 	<h1>MooBli La Jungle du livre</h1>
-		<br>
 	<div class="bouton-aligne">
 		<a href="list_livre.php" input type="button" class="bouton">Nos Livres</a>
 	</div><div class="bouton-aligne">
-		<a href="list_auteur.php" input type="button" class="bouton">Les Auteurs</a>
-	</div><div class="bouton-aligne">
-		<a href="formulaire_livre.php" input type="button" class="bouton">Action sur les Livres</a>
+		<a href="list_auteur.php" input type="button" class="bouton">Nos Auteurs</a>
 	</div>
+    <HR>
+    </div>
 </center>
 </body>
 </html>
