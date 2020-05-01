@@ -21,12 +21,7 @@ session_start(); // On démarre la session AVANT toute chose
    					<input type="search" name="terme" id="txt">
    					<input class="go" type="submit" name="s" value="GO" id="go">
   			</div></form>
-  			</div><div class="bouton-aligne">
-  			    <div class="texte3">
-  			<h1>Un doute, une question, un courriel !</h1>
-	                	<a href="mailto:admin.test@test.net" input type="button" class="bouton">Envoyer nous un courriel</a>
-	                	</div>
-	                </div>
+  			</div>
   			<script>
           var go = document.getElementById("go");
           go.addEventListener("click", valider);
@@ -42,7 +37,7 @@ session_start(); // On démarre la session AVANT toute chose
         <div class="bouton-aligne">
             <HR>
                 <h1>Dernières actualité de votre bibliothèque préférée</h1>
-           <small class="smalla">Les réservations sont ouvertes !</small>
+           <small class="smalla"><h2>Les réservations sont ouvertes !</h2></small>
             <p>
             <small class="small">Profitez-en un livre loué = -50% sur le deuxième livre loué</small>
             </p>

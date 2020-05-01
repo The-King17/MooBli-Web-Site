@@ -77,4 +77,14 @@ a{
 	border:none;
 	color:#000000;
 }
-
+.carousel-items {
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+.carousel-item {
+    margin-left: 6rem;
+}
+h2{
+    color: white;
+}

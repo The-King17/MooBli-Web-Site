@@ -18,10 +18,13 @@ session_start(); // On démarre la session AVANT toute chose
 <br>
 <p>Cette bibliothèque en ligne vous propose un large choix de livres, pour tous!</p>
 <p>En passant par les classics, comme Corneille, mais aussi plus récent comme Haruki Marakami</p>
-<br>
 <div class="bouton-aligne">
-	    	<a href="formulaire_livre.php" input type="button" class="retour">Modifier la Base de donnée</a>
-	    	</div>
+  			    <div class="texte3">
+  			<h1>Une question, un doute ?</h1>
+	                	<a href="mailto:admin.test@test.net" input type="button" class="bouton">Cliquez ici !</a>
+	                	</div>
+	                </div>
+
 	    	<br>
 <div class="bouton-aligne">
 <HR>

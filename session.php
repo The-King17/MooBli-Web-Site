@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once("fonctions-panier.php");
 
 $_SESSION['prenom'] = 'Flavie';
 $_SESSION['nom'] = 'Tonon';
@@ -32,6 +31,12 @@ $_SESSION['nom'] = 'Tonon';
         <a href="cmdencours.php" class="bouton">Mes commandes en cours</a><br />
         <a href="cmdpasse.php" class="bouton">Mes commandes précédentes</a><br />
         <a href="deconnexion.php" class="bouton">Déconnexion</a>
+        </div><div class="bouton-aligne">
+        <h1>Vous avez remarquer une erreur et vous souhaitez modifier notre base de donnée ?</h1>
+	    	<a href="formulaire_livre.php" input type="button" class="retour">Envoyer une demande de modification</a>
+	    	</div><div class="bouton-aligne">
+            <HR>
+        </div>
         </center>
     </h1>
     </div>

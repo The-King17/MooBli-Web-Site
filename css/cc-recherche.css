@@ -8,7 +8,7 @@ label {
 input,label {
     margin: .6rem 2;
 }
-/*Permet la bonne disposition de la barre de recherche*/
+/*Permet entre autre la bonne disposition de la barre de recherche*/
 div.aligne{
 	display:inline-block;
 	width:155%;
@@ -16,11 +16,11 @@ div.aligne{
 	text-align:center;
 }
 input{
-	width:405px;
-	height:95px;
+	width:305px;
+	height:65px;
 	background:#FFFFFFF;
 	font:bold 35px Arial;
-	border-radius:30%;
+	border-radius:10%;
 	border:none;
 	color:#0000000;
 }

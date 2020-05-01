@@ -15,14 +15,13 @@
 	<h1>MooBli La Jungle du livre</h1>
 	<div class="bouton-aligne">
 		<a href="list_livre.php" input type="button" class="bouton">Nos Livres</a>
-	</div><div class="bouton-aligne">
-		<a href="list_auteur.php" input type="button" class="bouton">Nos Auteurs</a>
-	</div><div class='bouton-aligne'>
+	</div>
+    <HR>
+        <div class='bouton-aligne'>
  <a href="session.php" class="retour">Mon compte</a>
  </div><div class='bouton-aligne'>
   <a href="panier.php" class="retour">Mon panier</a>
 </div>
-    <HR>
 </center>
 </body>
 </html>

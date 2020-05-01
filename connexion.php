@@ -2,19 +2,18 @@
 session_start();
 $titre="Connexion";
 include("menu.php");
-echo '<p><i>Vous êtes ici</i> : <a href="session.php">mon compte</a>';
 ?>
 <?php
-echo '<h1>Connexion</h1>';
+echo '<center><h1>Connexion</h1></center>';
 
     $message='';
     if (empty($_POST['pseudo']) || empty($_POST['pass']) ) //Oublie d'un champ
     {
-        $message = '<p>une erreur s\'est produite pendant votre identification.
-	Vous devez remplir tous les champs</p>
-	<p>Cliquez <a href="formdeconnexion.php">ici</a> pour revenir</p>';
+        $message = '<p><center>une erreur s\'est produite pendant votre identification.
+	Vous devez remplir tous les champs</center></p>
+	<p><center>Cliquez <a href="formdeconnexion.php">ici</a> pour revenir</center></p>';
     }
-    else //On check le mot de passe
+    else //On vérifie le mot de passe
     {
         $query=$db->prepare('SELECT pass, id, email, pseudo
         FROM membres WHERE pseudo = :pseudo');
@@ -26,19 +25,19 @@ echo '<h1>Connexion</h1>';
 	    $_SESSION['pseudo'] = $data['pseudo'];
 	   // $_SESSION['level'] = $data['membre_rang'];
 	    $_SESSION['id'] = $data['membre_id'];
-	    $message = '<p>Bienvenue '.$data['pseudo'].', 
-			vous êtes maintenant connecté!</p>
-			<p>Cliquez <a href="Acceuil.php">ici</a> 
-			pour revenir à la page d accueil</p>';  
+	    $message = '<p><center>Bienvenue '.$data['pseudo'].', 
+			vous êtes maintenant connecté!</center></p>
+			<p><center>Cliquez <a href="Acceuil.php">ici</a> 
+			pour revenir à la page d accueil</center></p>';  
 	}
 	else // Acces pas OK !
 	{
-	    $message = '<p>Une erreur s\'est produite 
+	    $message = '<p><center>Une erreur s\'est produite 
 	    pendant votre identification.<br /> Le mot de passe ou le pseudo 
-            entré n\'est pas correcte.</p><p>Cliquez <a href="formdeconnexion.php">ici</a> 
+            entré n\'est pas correcte.</p><p>Cliquez <a href="formdeconnexion.php">ici</center></a> 
 	    pour revenir à la page précédente
 	    <br /><br />Cliquez <a href="Acceuil.php">ici</a> 
-	    pour revenir à la page d accueil</p>';
+	    pour revenir à la page d accueil</center></p>';
 	}
     $query->CloseCursor();
     }
