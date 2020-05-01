@@ -20,12 +20,16 @@ session_start(); // On démarre la session AVANT toute chose
 <p>En passant par les classics, comme Corneille, mais aussi plus récent comme Haruki Marakami</p>
 <br>
 <div class="bouton-aligne">
+	    	<a href="formulaire_livre.php" input type="button" class="retour">Modifier la Base de donnée</a>
+	    	</div>
+	    	<br>
+<div class="bouton-aligne">
 <HR>
 </div>
     <br>
     <p>Ce site web, intégrant bien évidament HTML, CSS et PHP, intègre aussi du JavaScript.</p>
     <p>Cette réalisation s'est éffectué dans le cadre de notre première année de BTS SIO à l' IPSSI</p>
-    <p>Nous remercions notre professeur, pour ce projet qui nous a permis de renforcer nos compoétences en dévelopement Web</p>
+    <p>Nous remercions notre professeur, pour ce projet qui nous a permis de renforcer nos compétences en dévelopement Web</p>
 <p>©2019-2020</p>
 		</center>
 	    </footer>	

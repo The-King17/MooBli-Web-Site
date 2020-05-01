@@ -24,7 +24,7 @@ session_start(); // On démarre la session AVANT toute chose
   			</div><div class="bouton-aligne">
   			    <div class="texte3">
   			<h1>Un doute, une question, un courriel !</h1>
-	                	<a href="mailto:m.rocheteau@ecole-ipssi.net" input type="button" class="bouton">Envoyer nous un courriel</a>
+	                	<a href="mailto:admin.test@test.net" input type="button" class="bouton">Envoyer nous un courriel</a>
 	                	</div>
 	                </div>
   			<script>
@@ -39,10 +39,16 @@ session_start(); // On démarre la session AVANT toute chose
             }
           }
         </script>
-         <div class="bouton-aligne">
-			<HR>
-			    </div>
+        <div class="bouton-aligne">
+            <HR>
+                <h1>Dernières actualité de votre bibliothèque préférée</h1>
+           <small class="smalla">Les réservations sont ouvertes !</small>
+            <p>
+            <small class="small">Profitez-en un livre loué = -50% sur le deuxième livre loué</small>
+            </p>
+        </div>
 		<div class="bouton-aligne">
+		    <HR>
 		    <h1>Rejoignez-nous et profitez de plus d'avantage !</h1>
 		    </div>
 		<div class="bouton-aligne">
@@ -59,11 +65,9 @@ session_start(); // On démarre la session AVANT toute chose
             <div class="bouton-aligne">
 			<HR>
 			    </div>
-            <div class="bouton-aligne">
+            
         	<div class="bouton-aligne">
-	    	<a href="formulaire_livre.php" input type="button">Modifier la Base de donnée</a>
-	    	</div><div class="bouton-aligne">
-		<a href="app.php"input type="button">A propos de nous</a>
+		<a href="app.php"input type="button" class="retour">En savoir plus sur la bibliothèque</a>
 		    </div>
 	    	</center>
 	    </footer>	

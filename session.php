@@ -1,10 +1,9 @@
 <?php
-// On démarre la session
 session_start();
+include_once("fonctions-panier.php");
 
 $_SESSION['prenom'] = 'Flavie';
 $_SESSION['nom'] = 'Tonon';
-$_SESSION['age'] = 24;
 ?>
 <?php setcookie('pseudo', 'Flavie', time() + 365*24*3600, null, null, false, true); ?>
 <!DOCTYPE html>
@@ -20,22 +19,21 @@ $_SESSION['age'] = 24;
 		<?php include ("menu.php");?>
 <!--Barre de recherche intégré, permettant de chercher plus facilement dans le site-->
 		<center>
-    <body>
-        <div class="bouton-aligne">
-    <h1>
+        <h1>
         Bienvenue à  toi <?php echo $_SESSION['prenom']; ?> heureux de te voir parmis nous !<br />
         Tu es sur ton espace personnel !
-        Tu peux retrouvez tes commandes précedentes ou bien voir tes commandes en cours.
-    </h1></div><div class="bouton-aligne"><h1>
+        Tu peux retrouvez tes commandes précedentes ou bien voir tes commandes en cours et surtout ton panier !</h1>
+        <h1>Bonne visite</h1>
+    </h1></div><div class="bouton-aligne">
+        <HR>
+    </div>
+    <div class="bouton-aligne"><h1>
+        <a href="panier.php" class="bouton">Mon panier</a><br />
         <a href="cmdencours.php" class="bouton">Mes commandes en cours</a><br />
         <a href="cmdpasse.php" class="bouton">Mes commandes précédentes</a><br />
         <a href="deconnexion.php" class="bouton">Déconnexion</a>
-    </h1></div>
-    <div class="bouton-aligne">
-    <HR>
+        </center>
+    </h1>
     </div>
-    <h1>Mon Panier de réservation</h1>
-    <br>
-   <!--php pour afficher les livre réserver par tonon-->
     </body>
 </html>

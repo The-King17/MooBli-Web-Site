@@ -8,35 +8,40 @@
  <body>
  	<?php include ("menu.php"); ?>
  	<center>
+ 	    <div class="bouton-aligne">
  	<h1>Ajouter un livre</h1>
     <form method="post" action="ajouter_livre.php">
       <br>
-      <HR>
       <br>
       <div class="texte2">
-      <label>Nom du livre :</label> <input type="text" name="nom" id="nom">
+      <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="nom">
       <br>
       <br>
-      <label>Nombre de Page :</label><input type="number" name="nbpages" id="nbPages">
+      <label>Nombre de Page </label><input type="number" class="input-livre" name="nbpages" id="nbPages">
       <br>
       <br>
-      <label>Auteur : </label><input type="text" name="auteur" id="aut">
+      <label>Auteur </label><input type="text" name="auteur" class="input-livre" id="aut">
       <br>
       <br>
-      <label>Editeur :</label><input type="text" name="editeur" id="edit">
+      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="edit">
       <br>
       <br>
-      <label>Date de parution :</label> <input type="date" name="dteparu" id="dat">
+      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="dat">
       <br>
       <br>
-      <label>Langue :</label><input type="text" name="langue" id="lng">
+      <label>Langue </label><input type="text" name="langue" class="input-livre" id="lng">
       <br>
       <br>
-      <label>Genre :</label> <input type="text" name="genre" id="gnr">
+      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="gnr">
       <br>
-      <HR>
+       <div class="bouton-aligne">
+                       
+                  <br>
+        <input type="submit" value="Ajouter" class="bouton-livre" id="ajoutLivre">
       <br>
-      <input type="submit" value="AJOUTER LE LIVRE" id="ajoutLivre">
+                        <HR>
+                   </div>
+     
      </form> 
       </div>
       <script>
@@ -51,35 +56,40 @@
             }
           }
         </script>
-       <HR>
-      <br>
+
+      </div><div class="bouton-aligne">
       <h1>Supression d'un livre</h1>
       <br>
       <form method="post" action="sup_livre.php">
       <div class="texte2">
-     <label>Nom du livre :</label> <input type="text" name="nom" id="nom">
+     <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="nom">
       <br>
       <br>
-      <label>Nombre de Page :</label><input type="number" name="nbpages" id="nbPages">
+      <label>Nombre de Page </label><input type="number" class="input-livre" name="nbpages" id="nbPages">
       <br>
       <br>
-      <label>Auteur : </label><input type="text" name="auteur" id="aut">
+      <label>Auteur </label><input type="text" name="auteur" class="input-livre" id="aut">
       <br>
       <br>
-      <label>Editeur :</label><input type="text" name="editeur" id="edit">
+      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="edit">
       <br>
       <br>
-      <label>Date de parution :</label> <input type="date" name="dteparu" id="dat">
+      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="dat">
       <br>
       <br>
-      <label>Langue :</label><input type="text" name="langue" id="lng">
+      <label>Langue </label><input type="text" name="langue" class="input-livre" id="lng">
       <br>
       <br>
-      <label>Genre :</label> <input type="text" name="genre" id="gnr">
+      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="gnr">
       <br>
-      <HR>
+      <div class="bouton-aligne">
+                       
+                  <br>
+      <input type="submit" value="Suprimer" class="bouton-livre" id="supLivres">
       <br>
-      <input type="submit" value="SUPRIMER LE LIVRE" id="supLivres">
+                        <HR>
+                   </div>
+
       </div>
     </form>
       <script>
@@ -94,37 +104,38 @@
             }
           }
         </script>
-         <HR>
-      <br>
+        </div>
       <h1>Modifier un livre</h1>
       <br>
       <form method="post" action="modif_livre.php">
       <div class="texte2">
-      <label>Nom du livre :</label> <input type="text" name="nom" id="nom">
+      <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="nom">
       <br>
       <br>
-      <label>Nombre de Page :</label><input type="number" name="nbpages" id="nbPages">
+      <label>Nombre de Page </label><input type="number" class="input-livre" name="nbpages" id="nbPages">
       <br>
       <br>
-      <label>Auteur : </label><input type="text" name="auteur" id="aut">
+      <label>Auteur </label><input type="text" name="auteur" class="input-livre" id="aut">
       <br>
       <br>
-      <label>Editeur :</label><input type="text" name="editeur" id="edit">
+      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="edit">
       <br>
       <br>
-      <label>Date de parution :</label> <input type="date" name="dteparu" id="dat">
+      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="dat">
       <br>
       <br>
-      <label>Langue :</label><input type="text" name="langue" id="lng">
+      <label>Langue </label><input type="text" name="langue" class="input-livre" id="lng">
       <br>
       <br>
-      <label>Genre :</label> <input type="text" name="genre" id="gnr">
+      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="gnr">
       <br>
-      <HR>
+       <div class="bouton-aligne">
+                       
+                  <br>
+      <input type="submit" value="Modifier" class="bouton-livre" id="modifLivre">
       <br>
-      <input type="submit" value="MODIFIER LE LIVRE" id="modifLivre">
-      <br>
-      <HR>
+                        
+                   </div>
       </div>
     </form>
       <script>
@@ -139,8 +150,12 @@
             }
           }
         </script>
-        <!--bouton de retour en haut-->
-          <a href="#">Haut de page</a>
+         <div class="bouton-aligne">
+                       <HR>
+                   <!--bouton de retour en haut-->
+                   <a href="#">Haut de page</a>
+                        <HR>
+                   </div>
 	</center>
  </body>
 </html>

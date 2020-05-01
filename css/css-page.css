@@ -1,7 +1,7 @@
 /*Style (police,...) de tous les H1 du site*/
 h1{
 	color: white;
-	font-size: 30spx;
+	font-size: 45px;
 	font-style: oblique;
 	font-weight: 800;
 }
@@ -10,7 +10,7 @@ body{
 	background-color: #E2D425;
 }
 .livre{
-    border: 5px black solid;
+    border: 6px white solid;
     height: 250px;
     text-align: center;
     width: 500px;
@@ -39,7 +39,8 @@ div.boutondet{
 	color: white;
 }
 .texte2{
-	color: #FFFFFF;
+	color: white;
+	font:bold 30px Arial;
 }
 .texte3{
   	color: white;  
@@ -58,3 +59,22 @@ div.bouton-aligne{
 a{
    font:bold 23px Arial;
 }
+.bouton-livre {
+	width:355px;
+	height:55px;
+	background:#E2D425;
+	font:bold 30px Arial;
+	border-radius:60%;
+	border:none;
+	color:#FFFFFF;
+}
+.input-livre {
+	width:205px;
+	height:55px;
+	background:#FFFFFF;
+	font:bold 20px Arial;
+	border-radius:30%;
+	border:none;
+	color:#000000;
+}
+

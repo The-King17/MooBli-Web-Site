@@ -17,9 +17,12 @@
 		<a href="list_livre.php" input type="button" class="bouton">Nos Livres</a>
 	</div><div class="bouton-aligne">
 		<a href="list_auteur.php" input type="button" class="bouton">Nos Auteurs</a>
-	</div>
+	</div><div class='bouton-aligne'>
+ <a href="session.php" class="retour">Mon compte</a>
+ </div><div class='bouton-aligne'>
+  <a href="panier.php" class="retour">Mon panier</a>
+</div>
     <HR>
-    </div>
 </center>
 </body>
 </html>
