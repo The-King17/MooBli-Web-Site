@@ -2,13 +2,11 @@
 session_start();
 session_destroy();
 $titre="Déconnexion";
-include("includes/menu.php");
+include("menu.php");
 
-if ($id==0) erreur(ERR_IS_NOT_CO);
-
-echo '<p>Vous êtes à présent déconnecté <br />
-Cliquez <a href="'.htmlspecialchars($_SERVER['HTTP_REFERER']).'">ici</a> 
-pour revenir à la page précédente.<br />
-Cliquez <a href="acceuil.php">ici</a> pour revenir à la page principale</p>';
+echo '<p><center>Vous êtes à présent déconnecté <br />
+Cliquez <a href="formdeconnexion.php">ici</a> 
+pour vous connecter.<br />
+Cliquez <a href="Acceuil.php">ici</a> pour revenir à la page principale</center></p>';
 echo '</div></body></html>';
 ?>
