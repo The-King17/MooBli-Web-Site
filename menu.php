@@ -8,13 +8,15 @@
 </head>
 <body>
 	<center>
-	<a href="Acceuil.php">
+	<a href="index.php">
 		<img src="img/logo.png">
 	</a>
 	<div class="bouton-aligne">
 	<h1>MooBli La Jungle du livre</h1>
 	<div class="bouton-aligne">
 		<a href="list_livre.php" input type="button" class="bouton">Nos Livres</a>
+	</div><div class="bouton-aligne">
+		<a href="list_auteur.php" input type="button" class="bouton">Nos Auteurs</a>
 	</div>
     <HR>
         <div class='bouton-aligne'>

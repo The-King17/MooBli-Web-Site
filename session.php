@@ -28,14 +28,18 @@ $_SESSION['nom'] = 'Tonon';
     </div>
     <div class="bouton-aligne"><h1>
         <a href="panier.php" class="bouton">Mon panier</a><br />
-        <a href="cmdencours.php" class="bouton">Mes commandes en cours</a><br />
-        <a href="cmdpasse.php" class="bouton">Mes commandes précédentes</a><br />
+        <a href="cmd-en-cours.php" class="bouton">Mes commandes en cours</a><br />
+        <a href="cmd-passe.php" class="bouton">Mes commandes précédentes</a><br />
         <a href="deconnexion.php" class="bouton">Déconnexion</a>
         </div><div class="bouton-aligne">
         <h1>Vous avez remarquer une erreur et vous souhaitez modifier notre base de donnée ?</h1>
 	    	<a href="formulaire_livre.php" input type="button" class="retour">Envoyer une demande de modification</a>
 	    	</div><div class="bouton-aligne">
             <HR>
+                	<h1>Une question, un doute ?</h1>
+	                	<a href="contact.php" input type="button" class="bouton">Lancer le chat avec notre équipe !</a>
+	                	</div>
+	                </div>
         </div>
         </center>
     </h1>

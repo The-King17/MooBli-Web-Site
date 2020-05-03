@@ -14,13 +14,14 @@ session_start(); // On démarre la session AVANT toute chose
 <h1>Résultat de votre requête</h1>
 <?php
 try{
-$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-', 
+	array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
 
 }catch(Exception $e){
    die('Erreur : '.$e->getMessage());
 }
 
-$reponse = $bdd->prepare('DELETE FROM Livre WHERE titre = 'titre'');
+$reponse = $bdd->prepare('DELETE FROM Livre WHERE isbn = 'isbn'');
 
 while ($donnees = $reponse->fetch())
 {

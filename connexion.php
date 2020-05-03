@@ -11,7 +11,7 @@ echo '<center><h1>Connexion</h1></center>';
     {
         $message = '<p><center>une erreur s\'est produite pendant votre identification.
 	Vous devez remplir tous les champs</center></p>
-	<p><center>Cliquez <a href="formdeconnexion.php">ici</a> pour revenir</center></p>';
+	<p><center>Cliquez <a href="form_de_connexion.php">ici</a> pour revenir</center></p>';
     }
     else //On vérifie le mot de passe
     {
@@ -27,16 +27,16 @@ echo '<center><h1>Connexion</h1></center>';
 	    $_SESSION['id'] = $data['membre_id'];
 	    $message = '<p><center>Bienvenue '.$data['pseudo'].', 
 			vous êtes maintenant connecté!</center></p>
-			<p><center>Cliquez <a href="Acceuil.php">ici</a> 
+			<p><center>Cliquez <a href="index.php">ici</a> 
 			pour revenir à la page d accueil</center></p>';  
 	}
 	else // Acces pas OK !
 	{
 	    $message = '<p><center>Une erreur s\'est produite 
 	    pendant votre identification.<br /> Le mot de passe ou le pseudo 
-            entré n\'est pas correcte.</p><p>Cliquez <a href="formdeconnexion.php">ici</center></a> 
+            entré n\'est pas correcte.</p><p>Cliquez <a href="form_de_connexion.php">ici</center></a> 
 	    pour revenir à la page précédente
-	    <br /><br />Cliquez <a href="Acceuil.php">ici</a> 
+	    <br /><br />Cliquez <a href="index.php">ici</a> 
 	    pour revenir à la page d accueil</center></p>';
 	}
     $query->CloseCursor();

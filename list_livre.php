@@ -25,25 +25,25 @@
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre2.php"><img src="./miniature/min_2035867916.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2035867916.jpg" /></a>
                     </div>
                 </img>
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre3.php"><img src="./miniature/min_208127857x.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_208127857x.jpg" /></a>
                     </div>
                 </img>
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre4.php"><img src="./miniature/min_203585573x.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_203585573x.jpg" /></a>
                     </div>
                 </img>
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre5.php"><img src="./miniature/min_2264069112.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2264069112.jpg" /></a>
                     </div>
                 </img>
                  </div>
@@ -53,31 +53,31 @@
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre6.php"><img src="./miniature/min_2253037923.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2253037923.jpg" /></a>
                     </div>
                 </img>
                  <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre7.php"><img src="./miniature/min_2266152181.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2266152181.jpg" /></a>
                     </div>
                 </img>
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre8.php"><img src="./miniature/min_2253038741.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2253038741.jpg" /></a>
                     </div>
                 </img>
                  <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre9.php"><img src="./miniature/min_2081219972.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2081219972.jpg" /></a>
                     </div>
                 </img>
                 <img class="carousel-item">
                     <div class="card">
                         <h2 class="card-title"></h2>
-                        <a href="detail_livre10.php"><img src="./miniature/min_2070373096.jpg" /></a>
+                        <a href="detail_livre.php"><img src="./miniature/min_2070373096.jpg" /></a>
                     </div>
                 </img>
                  </div>
