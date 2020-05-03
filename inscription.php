@@ -15,7 +15,7 @@ session_start(); // On démarre la session AVANT toute chose
 <!--Barre de recherche intégré, permettant de chercher plus facilement dans le site-->
 		<center>
 <?php
-if (!isset($_POST['pseudo'])) //On est dans la page de formulaire
+if (!isset($_POST['pseudo']))
 {
 	echo '<form method="post" action="connexion.php">
 

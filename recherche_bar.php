@@ -11,7 +11,7 @@
  <?php include ("menu.php"); ?>
  <center>
  <h1>Résultat de votre recherche :</h1>
- 	<?php
+ <?php
 try{
 $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
 }catch(Exception $e){
@@ -22,7 +22,7 @@ $reponse = $bdd->prepare('SELECT titre, annee, isbn, nbpages FROM livre');
 
 while ($donnees = $reponse->fetch())
 {
-	echo '<p>' .$donnees['titre'] .'<p>'
+	echo '<p>'.$donnees['titre'] ; $donnees['annee'] ; $donnees['isbn'] .$donnees['nbpages'] .'<p>';
 }
 
 $reponse->closeCursor();
