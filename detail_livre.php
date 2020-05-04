@@ -19,12 +19,10 @@ try{
 $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
 
 $detail = $bdd->query('SELECT * FROM Livre JOIN Auteur ON Livre.isbn = Auteur.idRole JOIN Editeur ON Auteur.idRole = Editeur.id JOIN Genre ON Editeur.id = Genre.id JOIN Langue ON Genre.id = Langue.id JOIN Personne ON Langue.id = Personne.id WHERE isbn = "096573840x");
-
 while ($donnees = $detail->fetch())
 {
 	echo $donnees['isbn']." ".$donnees['titre']." ".$donnees['annee']." ". $donnees['editeur']." ". $donnees['genre']." ". $donnees['langue'];
 }
-
 $reponse->closeCursor();
 ?>
 <br>
