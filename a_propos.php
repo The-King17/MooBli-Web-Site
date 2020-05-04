@@ -32,7 +32,7 @@ session_start(); // On démarre la session AVANT toute chose
     <p>Ce site web, intégrant bien évidament HTML, CSS et PHP, intègre aussi du JavaScript.</p>
     <p>Cette réalisation s'est éffectué dans le cadre de notre première année de BTS SIO à l' IPSSI</p>
     <p>Nous remercions notre professeur, pour ce projet qui nous a permis de renforcer nos compétences en dévelopement Web</p>
-<p>©2019-2020 Version 20200503.1440</p>
+<p>©2019-2020 Version 20200504.1103</p>
 		</center>
 	    </footer>	
     </body>

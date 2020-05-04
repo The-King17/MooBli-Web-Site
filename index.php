@@ -15,7 +15,7 @@ session_start(); // On démarre la session AVANT toute chose
 <!--Barre de recherche intégré, permettant de chercher plus facilement dans le site-->
 		<center>
 		    <div class="bouton-aligne">
-			<h2>Vous recherchez un livre en particulier ?</h2>
+			<h2>Vous recherchez quelque chose en particulier ?</h2>
 		<div class="texte">
 			<form action="recherche_bar.php" method="post">
    					<input type="search" name="terme" id="txt">

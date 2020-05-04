@@ -10,8 +10,7 @@ session_start(); // On démarre la session AVANT toute chose
 </head>
 <body>
 <?php include ("menu.php"); ?>
-<HR>
-<h1>Résultat de votre requête</h1>
+    <center><h1>Votre livre supprimer !</h1></center>
 <?php
 try{
 $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-', 
@@ -21,7 +20,7 @@ $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8
    die('Erreur : '.$e->getMessage());
 }
 
-$reponse = $bdd->prepare('DELETE FROM Livre WHERE isbn = 'isbn'');
+$reponse = $bdd->prepare('DELETE FROM Livre WHERE isbn =( ?)' );
 
 while ($donnees = $reponse->fetch())
 {

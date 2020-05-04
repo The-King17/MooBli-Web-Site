@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 $_SESSION['prenom'] = 'Flavie';
 $_SESSION['nom'] = 'Tonon';
 ?>

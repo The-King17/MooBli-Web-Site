@@ -9,7 +9,8 @@ session_start(); // On démarre la session AVANT toute chose
 		<link rel="stylesheet" type="text/css" href="css/css-page.css">
 	</head>
 	<body>
-	<?php include (menu.php)?>	
+	<?php include ("menu.php")?>
+	<center><h1>Votre nouveau livre !</h1></center>
 	<?php
 		try{
 	$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
@@ -17,7 +18,7 @@ session_start(); // On démarre la session AVANT toute chose
         die('Erreur : '.$e->getMessage());
 	}
 
-	$reponse = $bdd->prepare('INSERT INTO Livre (titre,editeur,annee,genre,langue) VALUES ('nom','editeur','annee','genre','langue'');
+	$reponse = $bdd->prepare('INSERT INTO Livre (titre,editeur,annee,genre,langue) VALUES (?, ?)');
 
 	while ($donnees = $reponse->fetch())
 	{

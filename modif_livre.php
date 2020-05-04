@@ -5,24 +5,26 @@
 		<link rel="stylesheet" type="text/css" href="css/css-page.css">
 	</head>
 	<body>
-	<?php include (menu.php)?>	
+	<?php include ("menu.php")?>	
+	<center><h1>Modification de votre livre !</h1></center>
 	<?php
 		try{
 	$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
+	
 	}catch(Exception $e){
         die('Erreur : '.$e->getMessage());
 	}
-
-	$reponse = $bdd->query('INSERT INTO Livre (titre,editeur,annee,genre,langue) VALUES ('nom','editeur','annee','genre','langue'');
+	$reponse = $bdd->query('INSERT INTO Livre (titre,editeur,annee,genre,langue) VALUES (?, ?, ?, ?, ?)');
 
 	while ($donnees = $reponse->fetch())
 	{
+	    echo $donnees['titre']. "  " . $donnees['editeur']. "  " . $donnees['annee']. "  " . $donnees['genre']. "  " . $donnees['langie'] ;
 		echo ("modification éffectuer dans la base de donnée.");
 	}
-
+                 	
 	$reponse->closeCursor();
 
 	?>
-	</p>
-</body> 
+    	</p>
+    </body> 
 </html>

@@ -51,7 +51,7 @@ $email = isset($_POST['email']) ? $_POST['email'] : NULL;
 $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
 
 // Insertion
-$req = $bdd->prepare('INSERT INTO membres(id, pseudo, pass, email, date_inscription) VALUES(:id, pseudo, :pass, :email, CURDATE())');
+$req = $bdd->prepare('INSERT INTO membres(id, pseudo, pass, email, date_inscription) VALUES (?, ?, ?, ?, ?)');
 $req->execute(array(
     'id' => $id,
     'pseudo' => $pseudo,
