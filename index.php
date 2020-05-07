@@ -49,7 +49,7 @@ session_start(); // On démarre la session AVANT toute chose
 		<div class="bouton-aligne">
         	<h2>J'ai un compte, je me connecte ! </h2>
         	    <div class="bouton-aligne-sigin">
-        	    <a href="form_de_connexion.php">S'identifier</a>
+        	    <a href="log.php">S'identifier</a>
         	    </div>
         	</div><div class="bouton-aligne">
             <h2>Pas encore de compte ?</h2>	

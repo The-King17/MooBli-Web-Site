@@ -20,10 +20,8 @@
 	</div>
     <HR>
         <div class='bouton-aligne'>
- <a href="session.php" class="retour">Mon compte</a>
- </div><div class='bouton-aligne'>
-  <a href="panier.php" class="retour">Mon panier</a>
-</div>
+ <a href="page_membre.php" class="retour">Mon compte</a>
+ </div>
 </center>
 </body>
 </html>

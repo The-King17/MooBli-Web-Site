@@ -1,10 +1,9 @@
 <?php
-session_start(); // On démarre la session AVANT toute chose
+session_start();
 ?>
 <!DOCTYPE html>
 	<html>
 		<head>
-<!--page d'acceuil principal-->	
 			<title>Inscription</title>
 			<meta charset="utf-8">
 			<link rel="stylesheet" href="css/cc-recherche.css">
@@ -17,44 +16,28 @@ session_start(); // On démarre la session AVANT toute chose
 <?php
 if (!isset($_POST['pseudo']))
 {
-	echo '<form method="post" action="connexion.php">
-
-	<p>
-
-	<label for="pseudo">Nom : </label><input name="pseudo" type="text" id="pseudo" /><br />
-	
-	<label for="id">Identifiant : </label><input name="identifiant" type="text" id="id" /><br />
-	
-	<label for="email">email : </label><input name="email" type="text" id="email" /><br />
-
-	<label for="password">Mot de Passe : </label><input type="password" name="password" id="pass" />
-	
-	</p>
-	
-	<p><input type="submit" value="Inscription" /></p></form>
-
-	<a href="formdeconnexion.php" class="bouton">Déja inscrit ?</a>
-	 
+    echo '<HR>';
+	echo '<form action="inscription_bdd.php" method="post">
+<h1>Identifiant : </h1><input type="name" name="id" id="id"><br />
+<br>
+<h1>Nom : </h1><input type="text" name="pseudo" id="pseudo">
+<br />
+<h1>Prénom : </h1><input name="prénom" type="text" id="id"><br />
+<br>
+<h1>E-mail : </h1><input name="email" type="text" id="email"><br />
+<br>
+<h1>Mot de passe : </h1><input type="password" name="password" id="password"><br />
+<br>
+<h1>Date : </h1><input type="date" name="date_inscription" id="date_inscription"><br />
+<br>
+<input type="submit" value="Inscription">
+</form>
+<br>
+<br>
+	<a href="log.php" class="bouton">Déja inscrit ?</a>
+	  <HR>
 	    </div>
 	</body>
 </html>';
 }
-?>
-
-<?php 
-$id = isset($_POST['id']) ? $_POST['id'] : NULL;
-$pseudo = isset($_POST['pseudo']) ? $_POST['pseudo'] : NULL;
-$pass = isset($_POST['pass']) ? $_POST['pass'] : NULL;
-$email = isset($_POST['email']) ? $_POST['email'] : NULL;
-// Vérification de la validité des informations
-
-$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
-
-// Insertion
-$req = $bdd->prepare('INSERT INTO membres(id, pseudo, pass, email, date_inscription) VALUES (?, ?, ?, ?, ?)');
-$req->execute(array(
-    'id' => $id,
-    'pseudo' => $pseudo,
-    'pass' => $pass,
-    'email' => $email));
 ?>
