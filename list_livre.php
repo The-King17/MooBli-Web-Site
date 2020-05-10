@@ -1,3 +1,6 @@
+<?php
+session_start(); 
+?>
 <!DOCTYPE html>
 <html>
  <head>
@@ -7,85 +10,33 @@
      </head>
        <body>
          <?php include ("menu.php"); ?>
-           <center>
+                        </div></center>
+<?php
+try{
+$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
+}catch(Exception $e){
+        die('Erreur : '.$e->getMessage());
+}
+
+$reponse = $bdd->query('SELECT titre, annee, isbn, nbpages, prix FROM Livre');
+
+while ($donnees = $reponse->fetch())
+{
+           echo'<center>
               <h1>Les Livres</h1>
               <h2>Cliquez sur un livre pour en découvrir plus !</h2>
-                  <div class="bouton-aligne">
-            <HR>
-        </div>
-        <div class="bouton-aligne">
-             <section class="carousel">
-            <ul class="carousel-items">
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_096573840x.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2035867916.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_208127857x.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_203585573x.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2264069112.jpg" /></a>
-                    </div>
-                </img>
-                 </div>
-            <div class="bouton-aligne">
-            <section class="carousel">
-            <ul class="carousel-items">
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2253037923.jpg" /></a>
-                    </div>
-                </img>
-                 <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2266152181.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2253038741.jpg" /></a>
-                    </div>
-                </img>
-                 <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2081219972.jpg" /></a>
-                    </div>
-                </img>
-                <img class="carousel-item">
-                    <div class="card">
-                        <h2 class="card-title"></h2>
-                        <a href="detail_livre.php"><img src="./miniature/min_2070373096.jpg" /></a>
-                    </div>
-                </img>
-                 </div>
-                <!-- <div class="bouton-aligne">
-                     <HR>
-                   <a href="#">Haut de page</a>
-                        <HR>
-                   </div>-->
-             </center>
+         <div class="bouton-aligne">
+        <div><a href="detail_livre.php"><img src="./miniature/min_096573840x.jpg" /></a>
+                            <p><h2><center></p>'.$donnees['titre'].'</center></h2><p>
+		<p><h2><center></p>'.$donnees['annee'].'</center></h2><p></div>
+    
+        </div>';
+}
+            $reponse->closeCursor();
+?>
+<HR>
+     <!--bouton de retour en haut-->
+        <center><a href="#">Haut de page</a></center>
+<HR>
         </body>
 </html>
