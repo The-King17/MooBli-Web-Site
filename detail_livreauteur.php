@@ -19,8 +19,9 @@ $bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8
 }catch(Exception $e){
         die('Erreur : '.$e->getMessage());
 }
+$auteur=$_GET["auteur"];
+$reponse = $bdd->query('SELECT isbn, titre, auteur, annee, genre, description, prix, editeur FROM Livre where auteur ="'.$auteur.'"');
 
-$reponse = $bdd->query('SELECT isbn, titre, auteur, annee, genre, description, prix, editeur FROM Livre');
 
 while ($donnees = $reponse->fetch())
 {

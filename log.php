@@ -22,7 +22,7 @@ include ("menu.php");
 <div class="bouton-aligne">
 	<a href="inscription.php" class="bouton">Pas encore inscrit ?</a>
 	</div><div class="bouton-aligne">
-	<a href="mailto:admin.test@test.net" class="bouton">Mot de passe oublier ?</a>
+	<a href="mailto:admin.test@test.net" class="bouton">Mot de passe oublié ?</a>
 	</div>
 <HR>
 </center>

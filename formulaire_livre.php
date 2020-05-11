@@ -14,25 +14,28 @@
       <br>
       <br>
       <div class="texte2">
-      <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="nom">
+        <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="titre">
       <br>
       <br>
-      <label>Nombre de Page </label><input type="number" class="input-livre" name="nbpages" id="nbPages">
+      <label>Nombre de Pages </label><input type="number" class="input-livre" name="nbpages" id="nbpages">
       <br>
       <br>
-      <label>Auteur </label><input type="text" name="auteur" class="input-livre" id="aut">
+      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="editeur">
       <br>
       <br>
-      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="edit">
+      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="date_parution">
       <br>
       <br>
-      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="dat">
+      <label>Langue </label><input type="text" name="langue" class="input-livre" id="langue">
       <br>
       <br>
-      <label>Langue </label><input type="text" name="langue" class="input-livre" id="lng">
+      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="genre">
+       <br>
       <br>
+      <label>ISBN </label> <input type="text" name="isbn" class="input-livre" id="isbn">
+       <br>
       <br>
-      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="gnr">
+      <label>Prix </label> <input type="text" name="prix" class="input-livre" id="prix">
       <br>
        <div class="bouton-aligne">
                        
@@ -62,25 +65,28 @@
       <br>
       <form method="post" action="modif_livre.php">
       <div class="texte2">
-      <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="nom">
+      <label>Nom du livre </label> <input type="text" class="input-livre" name="nom" id="titre">
       <br>
       <br>
-      <label>Nombre de Page </label><input type="number" class="input-livre" name="nbpages" id="nbPages">
+      <label>Nombre de Pages </label><input type="number" class="input-livre" name="nbpages" id="nbpages">
       <br>
       <br>
-      <label>Auteur </label><input type="text" name="auteur" class="input-livre" id="aut">
+      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="editeur">
       <br>
       <br>
-      <label>Editeur </label><input type="text" name="editeur" class="input-livre" id="edit">
+      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="date_parution">
       <br>
       <br>
-      <label>Date de parution </label> <input type="date" class="input-livre" name="dteparu" id="dat">
+      <label>Langue </label><input type="text" name="langue" class="input-livre" id="langue">
       <br>
       <br>
-      <label>Langue </label><input type="text" name="langue" class="input-livre" id="lng">
+      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="genre">
+       <br>
       <br>
+      <label>ISBN </label> <input type="text" name="isbn" class="input-livre" id="isbn">
+       <br>
       <br>
-      <label>Genre </label> <input type="text" name="genre" class="input-livre" id="gnr">
+      <label>Prix </label> <input type="text" name="prix" class="input-livre" id="prix">
       <br>
        <div class="bouton-aligne">
                        
@@ -106,6 +112,7 @@
         </div>
         <div class="bouton-aligne">
       <h1>Supression d'un livre</h1>
+     <!-- <h2>Bientôt de retour ! Le problème sera régler prochainement.</h2>-->
       <br>
       <form method="post" action="sup_livre.php">
       <div class="texte2">

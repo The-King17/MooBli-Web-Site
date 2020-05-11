@@ -10,7 +10,9 @@ session_start(); // On démarre la session AVANT toute chose
 	</head>
 	<body>
 	<?php include ("menu.php")?>
-	<center><h1>Votre nouveau livre !</h1></center>
+	<center><h1>Votre nouveau livre a été ajouté!</h1></center>
+	<br>
+	<center><h1>Vous le retrouverez bientôt dans notre classement.</h1></center>
 	<?php
 		try{
 	$bdd = new PDO('mysql:host=localhost;dbname=id12582666_bibliotheque;charset=utf8', 'id12582666_root', 'eAprbk/0g1sDoyS-');
@@ -18,14 +20,7 @@ session_start(); // On démarre la session AVANT toute chose
         die('Erreur : '.$e->getMessage());
 	}
 
-	$reponse = $bdd->prepare('INSERT INTO Livre (titre,editeur,annee,genre,langue) VALUES (?, ?)');
-
-	while ($donnees = $reponse->fetch())
-	{
-		echo ("Livre ajouter à la base de donnée.");
-	}
-
-	$reponse->closeCursor();
+	$reponse = $bdd->query('INSERT INTO `Livre_modif`(`isbn`, `titre`, `editeur`, `annee`, `genre`, `langue`, `nbpages`, `prix`, `date_parution`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?');
 
 	?>
 	</p>

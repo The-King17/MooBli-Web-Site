@@ -13,7 +13,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
 
 	echo '<body>';
 	echo '<br>';
-	echo '<div class="bouton-aligne"><center><h1> Bonjour '.$_SESSION['login'].', Heureux de te voir ! </h1></center>
+	echo '<div class="bouton-aligne"><center><h1> Bonjour '.$_SESSION['login'].', Heureux de te revoir ! </h1></center>
 	</div><div class="bouton-aligne">
 	<center>
 	<a href="logout.php" class="bouton">Déconnexion</a>
@@ -21,15 +21,15 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
 	</div>
 	<HR>
 	<br />
-	<center><a href="panier.php" class="bouton">Mon panier</a><br>
-        <a href="cmd-en-cours.php" class="bouton">Mes commandes en cours</a><br />
-        <a href="cmd-passe.php" class="bouton">Mes commandes précédentes</a><br />
-          	<br />
+	<center><a href="panier.php" class="bouton">Mon panier</a>
+	<br>
+	<br>
+        <a href="cmd.php" class="bouton">Mes commandes</a><br />
 			<div class="bouton-aligne">
 	<HR>
 	</div>
 	<br />
-        <h1>Vous avez remarquer une erreur et vous souhaitez modifier notre base de donnée ?</h1>
+        <h1>Vous avez remarqué une erreur et vous souhaitez modifier notre base de donnée ?</h1>
 	    	<a href="formulaire_livre.php" input type="button" class="retour">Envoyer une demande de modification</a>
 	    	<center>
 	    	<br />
@@ -45,7 +45,7 @@ if (isset($_SESSION['login']) && isset($_SESSION['pwd'])) {
         </div></center>';
 }
 else {
-	echo '<center><h1>Ah y a erreur ...  Connectez-vous pour accéder à votre espace personel !</h1></center>';
+	echo '<center><h1>Une erreur est survenue ...  Connectez-vous pour accéder à votre espace personel !</h1></center>';
 	echo '<br>';
 	echo '<center><a href="log.php" input type="button" class="bouton">Se Connecter</a></center>';
 }

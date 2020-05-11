@@ -15,31 +15,17 @@ session_start(); // On démarre la session AVANT toute chose
 <!--Barre de recherche intégré, permettant de chercher plus facilement dans le site-->
 		<center>
 		    <div class="bouton-aligne">
-			<h2>Vous recherchez quelque chose en particulier ?</h2>
+			<h1>Vous recherchez un livre à prix malin pour vos vacances ? </h1>
 		<div class="texte">
-			<form action="recherche_bar.php" method="post">
-   					<input type="search" name="terme" id="txt">
-   					<input class="go" type="submit" name="s" value="GO" id="go">
-  			</div></form>
+   			<a href="requete_index.php" class="bouton">C'est par ici !</a>
   			</div>
-  			<script>
-          var go = document.getElementById("go");
-          go.addEventListener("click", valider);
-          function valider(){
-            var txt = document.getElementById("txt");
-            if(txt.value == ""){
-              alert("Saisie imcomplète !");
-            }else{
-              txt.readOnly = true;
-            }
-          }
-        </script>
+  			</div>
         <div class="bouton-aligne">
             <HR>
-                <h1>Dernières actualité de votre bibliothèque préférée</h1>
-           <small class="smalla"><h2>Les réservations sont ouvertes !</h2></small>
+                <h1>Dernières actualités de votre bibliothèque préférée</h1>
+           <small class="smalla"><h2>Les réservations en ligne sont ouvertes !</h2></small>
             <p>
-            <small class="small">Profitez-en un livre loué = -50% sur le deuxième livre loué</small>
+            <small class="small">Venez chercher votre commande au Drive Piéton de votre bibliothèque MooBli !</small>
             </p>
         </div>
 		<div class="bouton-aligne">
